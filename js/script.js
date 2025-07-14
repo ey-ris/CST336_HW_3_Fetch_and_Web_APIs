@@ -13,7 +13,7 @@ form.addEventListener('submit', async (event) => {
     if (species) url += `species=${encodeURIComponent(species)}`;
 
     if (!name && !species) {
-        resultsDiv.innerHTML = `<p style="text-align:center; color: red;">Please enter a name or species to search.</p>`;
+        resultsDiv.innerHTML = `<p style="text-align:center; color: red; font-weight: bold; text-shadow: 0 0 15px rgba(0, 0, 0, 1);">Please enter a name or species to search.</p>`;
         return;
     }
 

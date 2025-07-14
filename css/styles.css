@@ -1,6 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at center, #00ffcc, #001f1f);
+    color: #ffffff;
     padding: 2em;
 }
 
@@ -31,11 +32,30 @@ input, button {
 }
 
 .card {
-    background: white;
+    background: #1f1f1f;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
     overflow: hidden;
     text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+button {
+    background: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00ff99;
 }
 
 .card img {
