@@ -37,6 +37,6 @@ form.addEventListener('submit', async (event) => {
             resultsDiv.appendChild(card);
         });
     } catch (error) {
-        resultsDiv.innerHTML = `<p style="text-align:center; color: red;">${error.message}</p>`;
+        resultsDiv.innerHTML = `<p style="text-align:center; color: red; font-weight: bold; text-shadow: 0 0 15px rgba(0, 0, 0, 1);">${error.message}</p>`;
     }
 });
