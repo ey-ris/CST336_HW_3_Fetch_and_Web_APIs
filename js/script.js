@@ -12,6 +12,11 @@ form.addEventListener('submit', async (event) => {
     if (name) url += `name=${encodeURIComponent(name)}&`;
     if (species) url += `species=${encodeURIComponent(species)}`;
 
+    if (!name && !species) {
+        resultsDiv.innerHTML = `<p style="text-align:center; color: red;">Please enter a name or species to search.</p>`;
+        return;
+    }
+
     try {
         const response = await fetch(url);
         if (!response.ok) {
